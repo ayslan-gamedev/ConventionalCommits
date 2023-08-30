@@ -1,61 +1,53 @@
-# 🚀 Padrão de Commits com Emojis e Conventional Commits
+# 🚀 Commit Patterns with Emojis and Conventional Commits
 <a href="https://github.com/Ayslan-gamedev/ConventionalCommits/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ayslan-gamedev/ConventionalCommits?color=blue&style=flat-square"></a>
 
-Este repositório demonstra um padrão de commits que combina emojis e o estilo Conventional Commits para mensagens de commit mais descritivas e informativas.
+This repository demonstrates a commit pattern that combines emojis and the Conventional Commits style for more descriptive and informative commit messages.
 
-De acordo com a documentação do Conventional Commits, Commits Semânticos são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define um conjunto de regras para criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas.
+According to the Conventional Commits documentation, Semantic Commits are a simple convention to use in commit messages. This convention defines a set of rules for creating an explicit commit history, making it easier to create automated tools.
 
-## ⚙️ Configuração Inicial
+## ⚙️ Initial Setup
 
-  Siga os passos abaixo para configurar e começar a usar esse padrão de commits no seu projeto:
+  Follow the steps below to set up and start using this commit pattern in your project:
   
-  ### 1. Inicialize um Repositório Git
+  ### 1. Initialize a Git Repository
   
-  Se você ainda não tem um repositório Git, inicie um com o seguinte comando:
-  
-       ```bash
+  If you don't have a Git repository yet, initialize one with the following command:
+
        git init
-       ```
   
-  ### 2. Instale as Dependências
+  ### 2. Install Dependencies
   
-  Instale as dependências necessárias para trabalhar com esse padrão de commits:
+  Install the necessary dependencies to work with this commit pattern:
   
-       ```bash
        npm install --save-dev commitizen cz-customizable
        npm install --save-dev commitizen
-       ```
 
-  ### 3. Adicione os Arquivos de Configuração
-  Adicione os arquivos .czrc e .cz-config.js ao seu projeto. Você pode encontrar esses arquivos diretamente nesse repositório nas releases.
+  ### 3. Add Configuration Files
+  Add the .czrc and .cz-config.js files to your project. You can find these files directly in this repository in the releases section.
 
-  ### 4. Atualize o package.json
-  No arquivo package.json, adicione a seguinte seção aos seus scripts:
+  ### 4. Update the package.json
+  In the package.json file, add the following section to your scripts:
 
-       ```package.json
        "scripts": {
          "test": "echo \"Error: no test specified\" && exit 1",
          "commit": "npx git-cz"
        }
-       ```
-  Agora, você está pronto para começar a usar o padrão de commits!
+  Now, you're ready to start using the commit pattern!
 
-## 🛠️ Como Usar
-Para criar commits seguindo esse padrão, siga essas etapas:
+## 🛠️ How to Use
+To create commits following this pattern, follow these steps:
 
-Execute o comando de commit personalizado:
+Run the custom commit command:
 
-    ```bash
     npx git-cz
-    ```
     
-Você será apresentado com uma série de perguntas interativas. Preencha as informações solicitadas, como o tipo de commit, uma descrição concisa e opcionalmente um corpo mais detalhado.
-Após responder às perguntas, o commit será gerado automaticamente com a formatação adequada, incluindo emojis e um formato Conventional Commits.
+You will be presented with a series of interactive questions. Fill in the requested information, such as the commit type, a concise description, and optionally a more detailed body.
+After answering the questions, the commit will be automatically generated with the proper formatting, including emojis and the Conventional Commits format.
 
-## 🙏 Agradecimentos
+## 🙏 Acknowledgments
 
-Este padrão de commits foi inspirado pelo trabalho de [Holivane](https://github.com/Holivane) e seu repositório [padroes-de-commit](https://github.com/Holivane/padroes-de-commit). Agradecemos a Holivane pela sua contribuição à comunidade de desenvolvimento e por compartilhar seu conhecimento sobre boas práticas de commits.
+This commit pattern was inspired by the work of [Holivane](https://github.com/Holivane) and their repository [padroes-de-commit](https://github.com/Holivane/padroes-de-commit). We appreciate Holivane for their contribution to the development community and for sharing their knowledge of commit best practices.
 
-A documentação detalhada sobre como usar as mensagens de commit está disponível no repositório de Holivane. Certifique-se de conferir [aqui](https://github.com/Holivane/padroes-de-commit) para obter mais informações sobre a formatação das mensagens de commit.
+Detailed documentation on how to use commit messages is available in Holivane's repository. Be sure to check [here](https://github.com/Holivane/padroes-de-commit) for more information on commit message formatting.
 
-Este projeto é uma evolução baseada no excelente trabalho iniciado por Holivane.
+This project is an evolution based on the excellent work started by Holivane.
