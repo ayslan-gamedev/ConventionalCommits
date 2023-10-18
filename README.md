@@ -1,38 +1,36 @@
 # 🚀 Commit Patterns with Emojis and Conventional Commits
 <a href="https://github.com/Ayslan-gamedev/ConventionalCommits/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ayslan-gamedev/ConventionalCommits?color=blue&style=flat-square"></a>
 
-This repository demonstrates a commit pattern that combines emojis and the Conventional Commits style for more descriptive and informative commit messages.
+This repository creates an automatic way to write automatically organized commits through git commands, using a commit pattern that combines emojis and the Conventional Commits style for more descriptive and informative commit messages.
 
-According to the Conventional Commits documentation, Semantic Commits are a simple convention to use in commit messages. This convention defines a set of rules for creating an explicit commit history, making it easier to create automated tools.
+According to the Conventional Commits documentation, Semantic Commits are a simple convention to use in commit messages. This convention defines a set of rules for creating an explicit commit history, facilitating the creation of automated tools.
 
 ## ⚙️ Initial Setup
 
   Follow the steps below to set up and start using this commit pattern in your project:
   
-  ### 1. Initialize a Git Repository
+  ### 1. Make sure you already have node.js installed on your machine.
   
-  If you don't have a Git repository yet, initialize one with the following command:
-
-       git init
+  If you don't have Node.js installed yet, install in [nodejs.org](https://nodejs.org/en)
   
-  ### 2. Install Dependencies
+  ### 2. Start the repository and enter the following commands to install dependencies into the repository:
+
+    npm install --save-dev commitizen cz-customizable
+    npm install --save-dev commitizen
+       
+
+  ### 3. Extract the files released in this repository
   
-  Install the necessary dependencies to work with this commit pattern:
+  ### 4. Then move the “.czrc” and “.cz-config.js” files to the root of the repository.
   
-       npm install --save-dev commitizen cz-customizable
-       npm install --save-dev commitizen
+  ### 5. Update the package.json
+  Write the item below inside "package.json":
 
-  ### 3. Add Configuration Files
-  Add the .czrc and .cz-config.js files to your project. You can find these files directly in this repository in the releases section.
-
-  ### 4. Update the package.json
-  In the package.json file, add the following section to your scripts:
-
-       "scripts": {
-         "test": "echo \"Error: no test specified\" && exit 1",
-         "commit": "npx git-cz"
-       }
-  Now, you're ready to start using the commit pattern!
+     "scripts": {
+       "test": "echo \"Error: no test specified\" && exit 1",
+       "commit": "npx git-cz"
+     }
+  Now, you're ready to start using the commit pattern! use “npx git-cz” to commit
 
 ## 🛠️ How to Use
 To create commits following this pattern, follow these steps:
@@ -43,6 +41,7 @@ Run the custom commit command:
     
 You will be presented with a series of interactive questions. Fill in the requested information, such as the commit type, a concise description, and optionally a more detailed body.
 After answering the questions, the commit will be automatically generated with the proper formatting, including emojis and the Conventional Commits format.
+you can read the commit instructions at https://github.com/Holivane/padroes-de-commit
 
 ## 🙏 Acknowledgments
 
