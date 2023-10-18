@@ -23,7 +23,18 @@ According to the Conventional Commits documentation, Semantic Commits are a simp
   
   ### 4. Then move the “.czrc” and “.cz-config.js” files to the root of the repository.
   
-  ### 5. Update the package.json
+  ### 5. write the following lines in your .gitignore file:
+    # Node Modules (commitzen dependencies)
+    /node_modules/
+    
+    # CommitzenConfiguration
+    .czrc
+    .cz-config.js
+    package.json
+    package-lock.json
+    cz-config.js
+  
+  ### 6. Update the package.json
   Write the item below inside "package.json":
 
      "scripts": {
